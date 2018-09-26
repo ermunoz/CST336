@@ -1,15 +1,47 @@
 body
 {
-    background-color: gray;
+    background-image: url('img/pitch.png');
+    background-position: center;
 }
 
-#country, #league, #team
+#website_title
+{
+    text-align: center;
+}
+
+#country
 {
     text-align: center;
     float: left;
 }
 
+#league
+{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+#team
+{
+    float: right;
+}
+
+#roster
+{
+    text-align: center;
+}
+
+h1, h2
+{
+    text-align: center;
+}
+
 footer
 {
     clear: left;
+    text-align: center;
 }

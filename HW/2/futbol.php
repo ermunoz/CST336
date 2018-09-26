@@ -5,24 +5,43 @@ include 'functions.php';
 <!DOCTYPE html>
 <html>
 <head>
-    <h1> Random Soccer Team Generator </h1>
-    <title>Soccer Team Generator</title>
-    <style>
-        @import url("styles.css");
-    </style>
+    <div id='website_title'>
+        <h1> Random Soccer Team Generator </h1>
+        <title>Soccer Team Generator</title>
+        <style>
+            @import url("styles.css");
+        </style>
+    </div>
 </head>
 
-<div id='country'>
-</div>
+<body>
+    <div id='country'>
+        <?php
+            country();
+        ?>
+    </div>
+    
+    <div id='team'>
+        <?php
+            team();
+        ?>
+    </div>
+    
+    <div id='league'>
+        <?php
+            league();
+        ?>
+    </div>
+    
+    </br>
+    
+    <div id='roster'>
+        <?php
+            rosters();
+            display_roster();
+        ?>
+    </div>
+</body>
 
-<div id='league'>
-</div>
-
-<div id='team'>
-</div>
-
-<div id='roster'>
-</div>
-
-<footer> NOT ALL TEAMS SHOWN. </footer>
+<footer><h3>NOT ALL TEAMS SHOWN.</h3></footer>
 </html>

@@ -1,0 +1,280 @@
+Chelsea
+4-3-3
+GK - K. Arrizabalaga
+RB - C. Azpilicueta
+CB - A. Rudiger
+CB - D. Luis
+LB - M. Alonso
+RM - N. Kante
+LM - M. Kovacic
+CAM - Jorginho
+RF - Willian
+ST - O. Giroud
+LF - E. Hazard
+
+Liverpool
+4-2-3-1
+GK - Alisson
+RB - T. Alexander-Arnold
+CB - J. Matip
+CB - V. van Dijk
+LB - A. Robertson
+RCM - G. Wijnaldum
+LCM - J. Henderson
+RW - S. Mane
+CAM - X. Shaqiri
+LW - R. Firmino
+ST - M. Salah
+
+Manchester City
+4-3-3
+GK - Ederson
+RB - K. Walker
+CB - N. Otamendi
+CB - A. Laporte
+LB - F. Delph
+RM - D. Silva
+CM - Fernandinho
+LM - I. Gundogan
+RW - R. Sterling
+ST - S. Aguero
+LW - L. Sane
+
+Manchester United
+4-3-3
+GK - D. De Gea
+RB - A. Valencia
+CB - C. Smalling
+CB - V. Lindelof
+LB - L.Shaw
+RM - P. Pogba
+CM - M. Fellaini
+LM - Fred
+RW - J. Lindgard
+ST - R. Lukaku
+LW - A. Sanchez
+
+Tottenham Hotspur
+4-2-3-1
+GK - H. Lloris
+RB - K. Trippier
+CB - T. Alderweireld
+CB - J. Vertongen
+LB - D. Rose
+RM - E. Dier
+LM - D. Alli
+RW - H-M. Song
+CAM - C. Eriksen
+LW - L. Moura
+ST - H. Kane
+
+Atletico Madrid
+4-4-2
+
+GK - J. Oblak
+RB - Juanfran
+CB - J. Gimenez
+CB - D. Godin
+LB - Filipe Luis
+RW - T. Lemar
+RCM - R. Hernandez
+LCM - Saul
+LW - Koke
+ST - D. Costa
+ST - A. Griezmann
+
+Barcelona
+4-3-3
+GK - M. ter Stegen
+RB - N. Semedo
+CB - G. Pique
+CB - S. Umtiti
+LB - J. Alba
+RM - A. Vidal
+CM - S. Busquets
+LM - I. Rakitic
+RW - L. Messi
+ST - L. Suarez
+LW - O. Dembele
+
+Real Madrid
+4-3-3
+GK - T. Courtois
+RB - A. Ordriozola
+CB - R. Varane
+CB - S. Ramos
+LB - Nacho
+RM - L. Modric
+CM - Casemiro
+LM - T. Kroos
+RW - Isco
+ST - K. Benzema
+LW - G. Bale
+
+Sevilla
+3-5-2
+GK - T. Vaclik
+CB - S. Gomez
+CB - S. Kjaer
+CB - D. Carrico
+RW - J. Navas
+RCM - f. Vasquez
+CAM - E. Banega
+LCM - P. Sarabia
+LW - A. Vidal
+ST - Ben Yedder
+ST - Nolito
+
+GK - S. Asenjo
+RB - Mario
+Villareal
+4-4-2
+CB - V. Ruiz
+CB - Alvaro
+LB - J. Costa
+RM - P. Fornals
+RCM - M. Trigueros
+LCM - R. Funes Mori
+LM - M. Layun
+ST - Gerard
+ST - C. Bacca
+
+Bayern Munich
+4-3-3
+GK - M. Neuer
+RB - J. Kimmich
+CB - J. Boateng
+CB - M. Hummels
+LB - D. Alaba
+RM - T. Muller
+CAM - J. Rodriguez
+LM - J. Martinez
+RW - A. Robben
+ST - R. Lewandowski
+LW - F. Ribery
+
+Borussia Dortmund
+4-2-3-1
+GK - R. Burki
+RB - L. Piszczek
+CB - M. Akanji
+CB - A. Diallo
+LB - M. Schmelzer
+RCM - M. Dahoud
+LCM - A. Witsel
+RW - C. Pulisic
+CAM - S. Kagawa
+LW - M. Reus
+ST - M. Wolf
+
+Borussia Mochengladbach
+4-3-3
+GK - Y. Sommer
+RB - N. Elvedi
+CB - M. Ginter
+CB - T. Jantschke
+LB - O. Wendt
+RM - J. Hofmann
+CM - L. Stindl
+LM - D. Zakaria
+RW - F. Johnson
+ST - A. Plea
+LW - T. Hazard
+
+RB Leipzig
+4-2-2-2
+GK - P. Gulacsi
+RB - K. Laimer
+CB - W. Orban
+CB - D. Upamecano
+LB - M. Saracchi
+RCM - K. Kampl
+LCM - D. Demme
+RAM - M. Sabitzer
+LAM - E. Forsberg
+ST - Y. Poulsen
+ST - T. Werner
+
+Wolfsburg
+4-3-3
+GK - K. Casteels
+RB - W. Furtado
+CB - R. Knoche
+CB - J. Brooks
+LB - J. Roussillon
+RM - M. Arnold
+CM - I. Camacho
+LM - Y. Gerhardt
+RW - R. Steffan
+CF - W. Weghorst
+LW - A. Mehmedi
+
+AC Milan
+4-3-3
+GK - G. Donnarumma
+RB - D. Calabria
+CB - M. Musacchio
+CB - A. Romagnoli
+LB - R. Rodriguez
+CM - L. Biglia
+LM - F. Kessie
+RM - G. Bonaventura
+RW - Suso
+ST - G. Higuain
+LW - H. Calhanoglu
+
+Inter Milan
+4-2-3-1
+GK - S. Handanovic
+RB - D. D'Ambrosio
+CB - S. de Vrij
+CB - M. Skriniar
+LB - K. Asamoah
+RCM - M. Vecino
+LCM - M. Brozovic
+RAM - A. Candreva
+CAM - R. Nainggolan
+LAM - I. Perisic
+ST - M. Icardi
+
+Juventus
+4-3-3
+GK - W. Szczesny
+RB - J. Cuadrado
+CB - L. Bonucci
+CB - G. Chiellini
+LB - Alex Sandro
+RM - B. Matuidi
+CM - E. Can
+LM - M. Pjanic
+RW - P. Dybala
+ST - M. Mandzukic
+LW - C. Ronaldo
+
+Napoli
+4-2-3-1
+GK - D. Ospina
+RB - E.Hysajs
+CB - R. Albiol
+CB - K. Koulibaly
+LB - S. Luperto
+RCM - M. Rog
+LCM - M. Hamsik
+RAM - J. Callejon
+CAM - L. Insigne
+LAM - A. Milik
+ST - D. Mertens
+
+Roma
+4-3-3
+GK - R. Olsen
+RB - A. Florenzi
+CB - K. Manolas
+CB - F. Fazio
+LB - I. Marcano
+RM - L. Pellegrini
+CM - D. De Rossi
+LM - B. Christiante
+RW - J. Kluivert
+ST - E. Dzeko
+LW - D. Perotti
