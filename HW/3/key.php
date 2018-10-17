@@ -133,7 +133,7 @@
             
             else
             {
-                echo "<h1 class='wrong>Your answer is WRONG!</h1>";
+                echo "<h1 class='wrong'>Your answer is WRONG!</h1>";
                 echo "<br>";
             }
         }
@@ -155,7 +155,7 @@
             
             if ($a5 == "4")
             {
-                echo "<h1 class-'right'>Your answer is CORRECT!</h1>";
+                echo "<h1 class='right'>Your answer is CORRECT!</h1>";
                 echo "<br>";
                 $grade++;
             }
