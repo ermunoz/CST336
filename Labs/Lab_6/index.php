@@ -15,8 +15,9 @@ function displayCategories()
     foreach ($records as $record)
     {
         echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]. "\"> History </a>";
+        echo $record["productName"] . " " , $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
         
-        echo "<option>" . $record['catName'] . "</option>";
+        echo "<option value='". $record['categoryId'] ."'>" . $record['catName'] . "</option>";
     }
 }
 
@@ -37,7 +38,7 @@ function filterProducts()
     
     $statement = $dbConn -> prepare($sql);
     $statement -> execute($namedParamters);
-    $records = $statemet -> fetchAll(PDO.FETCH_ASSOC);
+    $records = $statement -> fetchAll(PDO.FETCH_ASSOC);
     print_r($records);
     
 }
@@ -95,12 +96,13 @@ function displaySearchResults()
         }
         
         
-        $statemet = $dbConn->prepare($sql);
-        $statemet->execute($namedParamters);
-        $records=$statemet->fetchAll(PDO::FETCH_ASSOC);
+        $statement = $dbConn->prepare($sql);
+        $statement->execute($namedParamters);
+        $records = $statement->fetchAll(PDO::FETCH_ASSOC);
         
         foreach ($records as $record)
         {
+            echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]. "\"> History </a>";
             echo $record["productName"] . " " . $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
         }
     }
