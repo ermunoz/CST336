@@ -1,6 +1,6 @@
 <?php
 
-function getDBconnection($dbname ='ottermart')
+function getDBconnection($dbname ='c9')
 {
     // Creating a database connection
     $host = "localhost"; // for C9
@@ -8,15 +8,13 @@ function getDBconnection($dbname ='ottermart')
     $username = "root";
     $password = "";
     
-    // heroku db
-    if (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false)
-    {
-        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $host = $url["us-cdbr-iron-east-01.cleardb.net"];
-        $dbname = substr($url["heroku_2bcf65001ad0708"], 1);
-        $username = $url["b6640a44a27287"];
-        $password = $url["06a22714"];
-
+    //checks whether the URL contains "herokuapp" (using Heroku)
+    if(strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
+       $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+       $host = $url["host"];
+       $dbname = substr($url["path"], 1);
+       $username = $url["user"];
+       $password = $url["pass"];
     }
     // creates db connection
     $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
