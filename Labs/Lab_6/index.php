@@ -17,7 +17,7 @@ function displayCategories()
         echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]. "\"> History </a>";
         echo $record["productName"] . " " , $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
         
-        echo "<option value='". $record['categoryId'] ."'>" . $record['catName'] . "</option>";
+        echo "<option value='". $record['catId'] ."'>" . $record['catName'] . "</option>";
     }
 }
 
@@ -65,8 +65,8 @@ function displaySearchResults()
         if (!empty($_GET['category']))
         {
             // checks if user has selected a category
-            $sql .= " AND catId = :categoryId";
-            $namedParamters[":categoryId"] = $_GET['category'];
+            $sql .= " AND catId = :catId";
+            $namedParamters[":catId"] = $_GET['category'];
         }
         
         if (!empty($_GET['priceFrom']))
