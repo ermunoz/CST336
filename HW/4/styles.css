@@ -1,0 +1,39 @@
+.error
+{
+    color: orange;
+    text-decoration: underline;
+    text-shadow: -2px 2px gray;
+    text-align: right;
+}
+
+.right
+{
+    color: lightblue;
+    text-decoration: underline;
+    text-shadow: -2px 2px black;
+    text-align: right;
+}
+
+.wrong
+{
+    color: red;
+    text-decoration: underline;
+    text-shadow: -2px 2px gray;
+    text-align: right;
+}
+
+#one #two #three #four #five #six #seven #eight
+{
+    text-align: left;
+}
+
+.finalgrade
+{
+    text-align: center;
+    color: purple;
+}
+
+.keytitle
+{
+    text-align: center;
+}
