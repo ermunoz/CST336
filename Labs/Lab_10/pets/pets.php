@@ -13,39 +13,39 @@
         return $records;  
     }
 ?>
-<script>
-    $(document).ready(function()
-    {
-        $("#adoptionsLink").addClass("active");
-        $(".petLink").click(function()
+    <script>
+        $(document).ready(function()
         {
-            $('#petModal').modal("show");
-            $("#petInfo").html("<img src='img/loading.gif'>");
-                $.ajax({
-                    type: "GET",
-                    url: "api/getPetInfo.php",
-                    dataType: "json",
-                    data: { "id": $(this).attr("id")},
-                    success: function(data,status) 
-                    {
-                       //alert(data.breed);
-                       //log.console(data.pictureURL);
-                       $("#petModalLabel").html("<h2>" + data.name +"</h2>");
-                       $("#petInfo").html("");
-                       $("#petInfo").append("Age: " + data.age + " years <br>");
-                       $("#petInfo").append(data.breed + "<br>");
-                       $("#petInfo").append(data.description + "<br>");
-                       $("#petInfo").append("<img src='img/" + data.pictureURL +"' width='150'>");
-                    },
-                    complete: function(data,status) 
-                    { 
-                        //optional, used for debugging purposes
-                        //alert(status);
-                    }
+            $("#adoptionsLink").addClass("active");
+            $(".petLink").click(function()
+            {
+                $('#petModal').modal("show");
+                $("#petInfo").html("<img src='img/loading.gif'>");
+                    $.ajax({
+                        type: "GET",
+                        url: "api/getPetInfo.php",
+                        dataType: "json",
+                        data: { "id": $(this).attr("id")},
+                        success: function(data,status) 
+                        {
+                           //alert(data.breed);
+                           //log.console(data.pictureURL);
+                           $("#petModalLabel").html("<h2>" + data.name +"</h2>");
+                           $("#petInfo").html("");
+                           $("#petInfo").append("Age: " + data.age + " years <br>");
+                           $("#petInfo").append(data.breed + "<br>");
+                           $("#petInfo").append(data.description + "<br>");
+                           $("#petInfo").append("<img src='img/" + data.pictureURL +"' width='150'>");
+                        },
+                        complete: function(data,status) 
+                        { 
+                            //optional, used for debugging purposes
+                            //alert(status);
+                        }
+                    });
                 });
-            });
-    });
-</script>
+        });
+    </script>
 <?php
     $petList = getAllPets();
     //print_r($petList);
