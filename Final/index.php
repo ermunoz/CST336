@@ -124,7 +124,7 @@ function initialDisplay()
                             echo "<h4> " .$product['ItemName']. "</h4>";
                             echo "<h5> " .$product['federationName']. "</h5>";
                             echo "<h6> " .$product['brandName']. "</h6>";
-                            echo "price: $".$product['price'];
+                            echo "Price: $".$product['price'];
                             echo "<br /> <br />";
                         }
                     ?>
