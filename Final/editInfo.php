@@ -41,14 +41,15 @@ function brands()
     }
 }
 
-//click button to update information
+// click button to update information
 if (isset($_GET['updateInfo'])) 
 {
     $ItemId = $_GET['ItemId'];
     $ItemName = $_GET['ItemName'];
     $brand = $_GET['brandName'];
+    $price = $_GET['price'];
     
-    //Need these to convert the Name into a number to insert into table properly (Changes the name back to number)
+    // changes the name back to number
     $fedId = $_GET['fedId'];
     $sql = "SELECT * FROM federation ORDER BY fedId ASC";
     $stmt = $dbConn->prepare($sql);
@@ -57,7 +58,7 @@ if (isset($_GET['updateInfo']))
 
     foreach ($records as $record) 
     {
-        if ($fedId == $record['federaionName'])
+        if ($fedId == $record['federationName'])
         {
             $fedId = $record['fedId'];
         }
@@ -81,14 +82,14 @@ if (isset($_GET['updateInfo']))
             SET ItemName = :iName,
                 fedId = :cId,
                 brandId = :bId,
-                priceId = :pId,
+                price = :pId
             WHERE ItemId = :id";
             
     $namedParameters = array();
     $namedParameters[':iName'] = $ItemName;
     $namedParameters[':cId'] = $fedId;
     $namedParameters[':bId'] = $brandId;
-    $namedParameters[':pId'] = $priceId;
+    $namedParameters[':pId'] = $price;
     $namedParameters['id'] = $ItemId;
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($namedParameters);
@@ -143,7 +144,7 @@ if (isset($_GET['updateInfo']))
                         ?>
                         <input type="hidden" name="ItemId" value="<?=$list['ItemId']?>" />
                         Item Name: <input type="text" name="ItemName" id="ItemName" value="<?php echo ucfirst($list['ItemName']); ?>" /> <br>
-                        Item Price: <input type="text" name="priceId" id="priceId" value="<?php echo ucfirst($list['priceId']); ?>" /> <br>
+                        Item Price: <input type="text" name="price" id="price" value="<?php echo ucfirst($list['price']); ?>" /> <br>
         
                         <?php 
                             //Get component name that the item is already under
@@ -164,7 +165,7 @@ if (isset($_GET['updateInfo']))
                                 <?php  
                                     foreach ($federname as $fedName) 
                                     {
-                        	            echo ucfirst($fedName['fedName']);
+                        	            echo ucfirst($fedName['federationName']);
                                     }
                                 ?>
                             </option>
@@ -175,7 +176,7 @@ if (isset($_GET['updateInfo']))
                             <option>
                                  <?php  foreach ($brandname as $brand) 
                                         {
-                        	                echo ucfirst($brand['brandId']);
+                        	                echo ucfirst($brand['brandName']);
                                         }
                                     ?>
                             </option>
