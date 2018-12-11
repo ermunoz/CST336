@@ -51,6 +51,22 @@ function initialDisplay()
     $records = $statement->fetchAll(PDO::FETCH_ASSOC);
     return $records;
 }
+// search
+function search($srch)
+{
+    global $dbConn;
+    if (!empty($_GET['jersey']))
+    {
+        $sql = "SELECT * FROM inventory WHERE ItemName LIKE :ItemName";
+        $namedParameters[":ItemName"] = "%" . $_GET['jersey'] . "%";
+        
+        $statement = $dbConn->prepare($sql);
+        $statement->execute($namedParameters);
+        $records = $statement->fetchAll(PDO::FETCH_ASSOC);
+        
+        return $records;
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -106,10 +122,16 @@ function initialDisplay()
                         <input type="submit" name="price" value="Sort" />
                         <br>
                     </form>
+                    <h3>Search Jerseys:</h3>
+                    <form action='index.php' style='display:inline' method='get'>
+                        <input type="text" name="jersey" placeholder="Team Name">
+                        <input type="submit" name="search" value="Search" />
+                    </form>
                     <hr />
                     <?php
                         // sorting by price
                         $order = $_GET['orderBy'];
+                        
                         if(isset($_GET['price'])) 
                         {
                             $list = orderPrice($order);
@@ -118,7 +140,18 @@ function initialDisplay()
                         {
                             $list = initialDisplay();   
                         }
-    
+                        // checking search
+                        $srch = $_GET['jersey'];
+                        
+                        if(isset($_GET['search']))
+                        {
+                            $list = search($srch);
+                        }
+                        else
+                        {
+                            $list = initialDisplay();
+                        }
+                        
                         foreach($list as $product) 
                         {
                             echo "<h4> " .$product['ItemName']. "</h4>";
